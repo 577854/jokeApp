@@ -1,3 +1,0 @@
-C:\guddisStuff\Fritid\Dotnet\Maui\JokeApp\bin\Release\net7.0-android\publish\com.companyname.jokeapp-Signed.aab
-C:\guddisStuff\Fritid\Dotnet\Maui\JokeApp\bin\Release\net7.0-android\publish\com.companyname.jokeapp.aab
-C:\guddisStuff\Fritid\Dotnet\Maui\JokeApp\bin\Release\net7.0-android\publish\com.companyname.jokeapp-Signed.apk
