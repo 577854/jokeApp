@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JokeApp.MainPage">
+
+    <ScrollView>
+      
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Border StrokeThickness="0"
+                    StrokeShape="RoundRectangle 40,40,40,40"
+                    Padding="0,0"
+                    HorizontalOptions="Center"
+                    HeightRequest="200"
+                    WidthRequest="300">
+                <Image Source="tom_laugh.png" Aspect="AspectFill" />
+            </Border>
+
+            <Label
+                Text="Your joke is..."
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                x:Name="jokeTxt"
+                Text="huehue"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description=""
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="JokeButton"
+                Text="I'm feeling lucky"
+                SemanticProperties.Hint="Gives you a funny joke"
+                Clicked="OnJokeButtonClick"
+                HorizontalOptions="Center" />
+
+            <VerticalStackLayout>
+                <Label Text="Check all"
+                            SemanticProperties.HeadingLevel="Level1"
+                            FontSize="12"
+                            HorizontalOptions="Center" />
+                <CheckBox x:Name="CheckAllCheckBox"
+                              IsChecked="false"
+                              CheckedChanged="OnCheckAllCheckBoxChanged"
+                              Color="Purple"
+                              HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Spacing="25">
+                <VerticalStackLayout>
+                    <Label Text="Programming"
+                            SemanticProperties.HeadingLevel="Level1"
+                            FontSize="12"
+                            HorizontalOptions="Center" />
+                    <CheckBox x:Name="programmingCheckBox"
+                              IsChecked="false"
+                              CheckedChanged="OnCheckBoxChanged"
+                              Color="Purple"
+                              HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                <Label Text="Dark"
+                       SemanticProperties.HeadingLevel="Level1"
+                       FontSize="12"
+                       HorizontalOptions="Center" />
+                <CheckBox 
+                    x:Name="darkCheckBox"
+                    IsChecked="false"
+                    CheckedChanged="OnCheckBoxChanged"
+                    Color="Purple"
+                    HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                <Label Text="Misc"
+                       SemanticProperties.HeadingLevel="Level1"
+                       FontSize="12"
+                       HorizontalOptions="Center" />
+                <CheckBox 
+                    x:Name="miscCheckBox"
+                    IsChecked="false"
+                    CheckedChanged="OnCheckBoxChanged"
+                    Color="Purple"
+                    HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Label Text="Pun"
+                           SemanticProperties.HeadingLevel="Level1"
+                           FontSize="12"
+                           HorizontalOptions="Center" />
+                    <CheckBox 
+                    x:Name="punCheckBox"
+                    IsChecked="false"
+                    CheckedChanged="OnCheckBoxChanged"
+                    Color="Purple"
+                    HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Label Text="Spooky"
+                           SemanticProperties.HeadingLevel="Level1"
+                           FontSize="12"
+                           HorizontalOptions="Center" />
+                    <CheckBox 
+                    x:Name="spookyCheckBox"
+                    IsChecked="false"
+                    CheckedChanged="OnCheckBoxChanged"
+                    Color="Purple"
+                    HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Label Text="Christmas"
+                            SemanticProperties.HeadingLevel="Level1"
+                            FontSize="12"
+                            HorizontalOptions="Center" />
+                    <CheckBox 
+                    x:Name="christmasCheckBox"
+                    IsChecked="false"
+                    CheckedChanged="OnCheckBoxChanged"
+                    Color="Purple"
+                    HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>     
+        </VerticalStackLayout>
+  
+    </ScrollView>
+
+</ContentPage>

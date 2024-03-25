@@ -1,0 +1,1 @@
+C:\guddisStuff\Fritid\Dotnet\Maui\JokeApp\JokeApp.csproj;x64
